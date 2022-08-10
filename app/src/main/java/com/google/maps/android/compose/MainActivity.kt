@@ -30,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.google.maps.android.compose.compose.ui.ComposeActivity
 import com.google.maps.android.compose.theme.MapsComposeSampleTheme
 
 private const val TAG = "MapSampleActivity"
@@ -58,7 +59,7 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.padding(10.dp))
                         Button(
                             onClick = {
-                                context.startActivity(Intent(context, BasicMapActivity::class.java))
+                                context.startActivity(Intent(context, ComposeActivity::class.java))
                             }) {
                             Text(getString(R.string.basic_map_activity))
                         }

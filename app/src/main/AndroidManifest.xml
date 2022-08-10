@@ -33,6 +33,10 @@
         android:value="${MAPS_API_KEY}" />
 
     <activity
+        android:name=".compose.ui.ComposeActivity"
+        android:exported="false" />
+
+    <activity
         android:name=".MainActivity"
         android:exported="true">
       <intent-filter>
